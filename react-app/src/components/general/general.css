@@ -1,0 +1,15 @@
+.red-line {
+	height: 2px;
+	background-color: red;
+	width: 100%;
+  }
+
+button {
+	font: white;
+	background-color: red;
+  }
+
+.search-bar {
+	background-color: grey;
+	border-radius: 30px;
+}
