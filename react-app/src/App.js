@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import Dashboard from './Dashboard';
-import Authentication from './Authentication';
+import Dashboard from './routes/auth/Dashboard';
+import Authentication from './routes/auth/Authentication';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -13,7 +13,7 @@ const App = () => {
     if (accessToken) {
       const fetchAuth = async () => {
         try {
-          const response = await fetch('/api/auth/', {
+          const response = await fetch('http://localhost:8000/api/auth/', {
             method: 'POST',
             headers: {
               'Authorization': `Bearer ${accessToken}`,
@@ -31,6 +31,7 @@ const App = () => {
         } catch (error) {
           console.error("Erreur d'authentification :", error);
           setIsLoggedIn(false);
+          localStorage.removeItem('accessToken');
         }
       };
 
@@ -43,7 +44,10 @@ return (
     {isLoggedIn ? (
       <Dashboard username={userUsername}></Dashboard>
     ) : (
-      <Authentication></Authentication>
+      <Authentication
+      setIsLoggedIn={setIsLoggedIn}
+      setUserUsername={setUserUsername}
+      ></Authentication>
     )}
   </div>
 );

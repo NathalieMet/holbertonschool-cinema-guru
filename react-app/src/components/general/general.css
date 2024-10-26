@@ -5,11 +5,26 @@
   }
 
 button {
-	font: white;
-	background-color: red;
+	color: white;
+	background-color: rgba(187, 0, 14, 1);
+	font-family: 'Roboto', sans-serif;
   }
 
 .search-bar {
 	background-color: grey;
 	border-radius: 30px;
+}
+
+input {
+	border: none;
+	border-bottom: 2px solid red;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-and-label {
+	display: flex;
+	align-self: flex-start;
+	margin-left: 2rem;
 }

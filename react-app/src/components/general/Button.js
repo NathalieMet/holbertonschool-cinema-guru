@@ -1,15 +1,16 @@
 import './general.css';
 
-const Button = ({ label, className, onClick, icon}) => {
-	return (
-		<button
+const Button = ({ label, className, onClick, icon, type = "button" }) => {
+  return (
+    <button
+      type={type}
       className={`button ${className}`}
       onClick={onClick}
     >
-      {icon && <span className="icon">{icon}</span>}
+      {icon && <img src={icon} alt="" className="icon" />}
       {label}
     </button>
-	  );
+  );
 };
 
 export default Button;

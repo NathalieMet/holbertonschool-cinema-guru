@@ -7,8 +7,10 @@ const Input = ({ label, type, className, value, setValue, icon, inputAttributes 
 
 	return (
 		<div className="input">
+		<div className="input-and-label">
+		{icon && <img src={icon} alt="" className="icon" />}
 		<label htmlFor="input">{label}</label>
-		{icon && <span className="icon">{icon}</span>}
+		</div>
 		<input
 		type={type}
 		className={className}
@@ -16,7 +18,6 @@ const Input = ({ label, type, className, value, setValue, icon, inputAttributes 
 		onChange={handleInput}
 		{...inputAttributes}
 		/>
-		<div class="red-line"></div>
 		</div>
 	  );
 };
