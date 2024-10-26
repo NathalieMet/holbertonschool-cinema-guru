@@ -25,10 +25,9 @@ const Login = ({ username, password, setUsername, setPassword }) => {
 				setValue={setPassword}
 				icon={keyIcon}>
 			</Input>
-			<Button type="button"
+			<Button type="submit"
 				label="Sign In"
 				className="sign_in_button_login"
-				onClick={() => {}}
 				icon={keyWhiteIcon}>
 			</Button>
 		</div>

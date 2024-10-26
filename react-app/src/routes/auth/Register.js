@@ -25,10 +25,9 @@ const Register = ({ username, password, setUsername, setPassword }) => {
 				setValue={setPassword}
 				icon={keyIcon}
 			/>
-			<Button type="button"
+			<Button type="submit"
 				label="Sign Up"
 				className="sign_up_button_register"
-				onClick={() => {}}
 				icon={keyWhiteIcon}>
 			</Button>
 		</div>

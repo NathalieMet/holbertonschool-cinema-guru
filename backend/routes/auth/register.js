@@ -4,6 +4,8 @@ const User = require('../../models/User')
 const { generateToken } = require('../../utils/tokens')
 
 router.post('/', async (req, res) => {
+    console.log("dans register")
+    console.log("Corps de la requête:", req.body);
     User.create({
         username: req.body.username,
         password: req.body.password,

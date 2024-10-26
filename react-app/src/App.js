@@ -42,7 +42,7 @@ const App = () => {
 return (
   <div className="App">
     {isLoggedIn ? (
-      <Dashboard username={userUsername}></Dashboard>
+      <Dashboard></Dashboard>
     ) : (
       <Authentication
       setIsLoggedIn={setIsLoggedIn}
