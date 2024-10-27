@@ -1,0 +1,32 @@
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(22, 22, 22, 1);
+	font-size: 16px;
+	color: white;
+	width: 100%;
+}
+
+.header-container .cinema-guru{
+	margin-left: 3rem;
+}
+
+
+.right {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	margin-right: 3rem;
+}
+
+.header-container span {
+	color: rgba(187, 0, 14, 1);
+}
+
+.avatar-logo {
+	width: 2rem;
+	height: auto;
+	border-radius: 50%;
+	border: 3px solid rgba(187, 0, 14, 1);
+	object-fit: cover;
+}

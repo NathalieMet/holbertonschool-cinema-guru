@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import Dashboard from './routes/auth/Dashboard';
+import Dashboard from './routes/dashboard/Dashboard';
 import Authentication from './routes/auth/Authentication';
 
 const App = () => {
@@ -42,11 +42,14 @@ const App = () => {
 return (
   <div className="App">
     {isLoggedIn ? (
-      <Dashboard></Dashboard>
+      <Dashboard
+      userUsername={userUsername}
+      setIsLoggedIn={setIsLoggedIn}>
+      </Dashboard>
     ) : (
       <Authentication
-      setIsLoggedIn={setIsLoggedIn}
       setUserUsername={setUserUsername}
+      setIsLoggedIn={setIsLoggedIn}
       ></Authentication>
     )}
   </div>
