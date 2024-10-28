@@ -1,5 +1,6 @@
 import './dashboard.css'
 import Header from '../../components/navigation/Header'
+import SideBar from '../../components/navigation/SideBar';
 
 const Dashboard = ({ userUsername, setIsLoggedIn }) => {
 
@@ -9,6 +10,7 @@ const Dashboard = ({ userUsername, setIsLoggedIn }) => {
 			userUsername={userUsername}
 			setIsLoggedIn={setIsLoggedIn}>
 			</Header>
+			<SideBar></SideBar>
 		</div>
 	);
 };

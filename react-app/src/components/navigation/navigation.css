@@ -7,7 +7,7 @@
 	width: 100%;
 }
 
-.header-container .cinema-guru{
+.header-container .cinema-guru {
 	margin-left: 3rem;
 }
 
@@ -29,4 +29,59 @@
 	border-radius: 50%;
 	border: 3px solid rgba(187, 0, 14, 1);
 	object-fit: cover;
+}
+
+.sidebar-nav{
+	background-color: rgba(187, 0, 14, 1);
+	width: 18%;
+	color: white;
+	min-height: 100vh;
+}
+
+.sidebar-nav-small {
+	background-color: rgba(187, 0, 14, 1);
+	display: inline-block;
+	color: white;
+	min-height: 100vh;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.li-container {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 16px;
+
+}
+
+.li-container:hover {
+	background-color: rgba(243, 29, 39, 1);
+
+}
+
+li {
+	margin-left: 1rem;
+}
+
+img {
+	padding-left: 1rem;
+}
+
+.activities-sidebar {
+	background-color: rgba(44, 44, 44, 1);
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0.5rem;
+}
+
+.activities-sidebar h1{
+	font-size: 24px;
+	font-weight: lighter;
+	text-decoration:underline;
+	text-align: center;
 }
