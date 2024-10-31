@@ -13,7 +13,7 @@ const Filter = ({ minYear, setMinYear, maxYear, setMaxYear, sort, setSort, genre
 	return (
 		<div className='filters'>
 			<SearchBar
-				title={title}
+				title='Search movies'
 				setTitle={setTitle} />
 
 			<div className='filter-inputs'>

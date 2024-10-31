@@ -1,6 +1,6 @@
 import './components.css'
 
-const Activity = ({activity}) => {
+const Activity = ({ activity }) => {
 	return (
 	  <li>
 		<p>

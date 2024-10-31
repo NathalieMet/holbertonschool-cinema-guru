@@ -6,7 +6,7 @@ const SearchBar = ({ title, setTitle }) => {
 	}
 	return (
 		<input
-			type={text}
+			type='text'
 			value={title}
 			onChange={handleInput}
 			className="search-bar"

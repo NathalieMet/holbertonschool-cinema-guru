@@ -19,7 +19,7 @@ const SelectInput = ({ label, options, className, value, setValue }) => {
 				</option>
 			))}
 		</select>
-		<div class="red-line"></div>
+		<div className="red-line"></div>
 		</div >
 	  );
 };

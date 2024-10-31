@@ -62,8 +62,8 @@ const SideBar = () => {
 					<div className='activities-sidebar'>
 						<h1>Latest Activities</h1>
 					<ul className='activity'>
-						{activities.slice(0, 10).map((activity) => (
-							<Activity activity={activity}/>
+						{activities.slice(0, 10).map((activity, index) => (
+							 <Activity key={activity.id || index} activity={activity} />
 						))}
 					</ul>
 					</div>

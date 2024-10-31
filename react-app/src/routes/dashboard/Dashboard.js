@@ -15,6 +15,7 @@ const Dashboard = ({ userUsername, setIsLoggedIn }) => {
 					userUsername={userUsername}
 					setIsLoggedIn={setIsLoggedIn}>
 				</Header>
+				<div className='main-page'>
 				<SideBar></SideBar>
 				<Routes>
 					<Route path="/home" element={<HomePage />} />
@@ -22,6 +23,7 @@ const Dashboard = ({ userUsername, setIsLoggedIn }) => {
 					<Route path="/watchlater" element={<WatchLater />} />
 					<Route path="*" element={<Navigate to="/home" />} />
 				</Routes>
+				</div>
 			</div>
 		</BrowserRouter>
 	);
